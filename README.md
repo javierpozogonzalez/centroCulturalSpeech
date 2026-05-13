@@ -55,7 +55,7 @@ Esta decisión arquitectónica no es caprichosa — responde directamente a vues
 
 Para entender el sistema de un vistazo, empezamos por el nivel más alto: el diagrama de contexto.
 
-Aquí vemos el sistema como una caja negra rodeada de todo aquello con lo que interactúa. Tenemos cuatro tipos de usuarios: el **ciudadano**, que consulta y se inscribe en actividades; el **monitor**, que gestiona las actividades que imparte; el **administrador del centro**, que tiene control total sobre la plataforma; y el **responsable de sala**, que supervisa el estado y disponibilidad de su espacio.
+Aquí vemos el sistema como una caja negra rodeada de todo aquello con lo que interactúa. Tenemos cuatro tipos de usuarios: el **ciudadano**, que consulta y se inscribe en actividades; el **monitor**, que gestiona las actividades que imparte; el **administrador del centro**, que tiene control total sobre la plataforma.
 
 Fuera del sistema, el centro cultural no vive aislado. Se conecta con **Stripe** para cobrar matrículas, con **SendGrid** para notificaciones por email y SMS, con el **servicio de autenticación del ayuntamiento**, con **Google Calendar** para que los ciudadanos exporten los horarios de sus actividades, y con el **sistema contable municipal** para el reporting de ingresos.
 
