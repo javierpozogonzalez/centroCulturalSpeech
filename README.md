@@ -3,7 +3,7 @@
 
 ---
 
-## 1. INTRODUCCIÓN (30 segundos) — Slide 1
+## 1. INTRODUCCIÓN (30 segundos) — Slide 1 -> IVAN
 
 Buenos días / Buenas tardes. Antes de nada, queremos agradeceros que nos hayáis dado la oportunidad de trabajar en este proyecto. Habéis llegado a nosotros con una necesidad muy clara: el centro cultural está creciendo, las actividades aumentan cada temporada, y gestionar inscripciones, salas, monitores y notificaciones con hojas de cálculo o sistemas dispersos ya no es viable.
 
@@ -11,7 +11,7 @@ Hoy os venimos a presentar la arquitectura completa de la plataforma que vamos a
 
 ---
 
-## 2. EL PROBLEMA (30 segundos) — Slide 3
+## 2. EL PROBLEMA (30 segundos) — Slide 3 -> IVAN
 
 *[Los bullets aparecen uno a uno]*
 
@@ -21,7 +21,7 @@ Estos cinco puntos son los que guiaron cada decisión arquitectónica que vamos 
 
 ---
 
-## 3. ELECCIÓN DE ARQUITECTURA Y JUSTIFICACIÓN (3 minutos — la parte más importante) — Slides 4 y 5
+## 3. ELECCIÓN DE ARQUITECTURA Y JUSTIFICACIÓN (3 minutos — la parte más importante) — Slides 4 y 5 -> IVAN
 
 ### Slide 4 — Por qué microservicios
 
@@ -33,7 +33,7 @@ Imaginad el inicio de temporada en septiembre. En cuestión de horas, cientos de
 
 Por eso hemos optado por una **arquitectura orientada a microservicios**. Cada funcionalidad crítica es un servicio independiente: actividades, usuarios, inscripciones, salas, monitores y notificaciones. Si hay un pico de demanda en inscripciones, solo escalamos ese servicio. Y si el servicio de notificaciones tiene un problema puntual, las inscripciones siguen funcionando con total normalidad.
 
-### Slide 5 — Requisitos no funcionales
+### Slide 5 — Requisitos no funcionales -> IVAN
 
 *[Cada tarjeta se ilumina al hablar de ella]*
 
@@ -49,7 +49,7 @@ Esta decisión arquitectónica no es caprichosa — responde directamente a vues
 
 ---
 
-## 4. DIAGRAMA DE CONTEXTO — NIVEL 1 (1 minuto) — Slides 6, 7, 8
+## 4. DIAGRAMA DE CONTEXTO — NIVEL 1 (1 minuto) — Slides 6, 7, 8 -> POZO
 
 *[El zoom va de la vista general → actores → sistema central → integraciones externas]*
 
@@ -63,7 +63,7 @@ Este diagrama es importante porque define con claridad el perímetro del sistema
 
 ---
 
-## 5. DIAGRAMA DE CONTENEDORES — NIVEL 2 (1 minuto 30 segundos) — Slides 9, 10, 11, 12
+## 5. DIAGRAMA DE CONTENEDORES — NIVEL 2 (1 minuto 30 segundos) — Slides 9, 10, 11, 12 -> POZO 
 
 *[Cada elemento se ilumina en su turno]*
 
@@ -79,7 +79,7 @@ Para las notificaciones usamos **Python con Celery**, que escucha el bus de even
 
 ---
 
-## 6. PATRÓN OBSERVER (1 minuto) — Slide 13
+## 6. PATRÓN OBSERVER (1 minuto 30 segundos) — Slide 13 -> POZO 
 
 *[El flujo se construye paso a paso, bloque a bloque]*
 
@@ -93,7 +93,7 @@ El punto clave está aquí: el servicio de inscripciones no sabe quién reaccion
 
 ---
 
-## 7. DIAGRAMA DE COMPONENTES — NIVEL 3 (1 minuto 30 segundos) — Slides 14, 15, 16, 17
+## 7. DIAGRAMA DE COMPONENTES — NIVEL 3 (1 minuto 30 segundos) — Slides 14, 15, 16, 17 -> PABLETE
 
 *[Las tres capas se iluminan una a una, luego el diagrama completo]*
 
@@ -109,7 +109,7 @@ Esta arquitectura interna consistente en todos los servicios no es casualidad �
 
 ---
 
-## 8. DIAGRAMA DE CÓDIGO — NIVEL 4 (45 segundos) — Slides 18, 19, 20
+## 8. DIAGRAMA DE CÓDIGO — NIVEL 4 (45 segundos) — Slides 18, 19, 20 -> PABLETE
 
 *[Cada paso del flujo se ilumina en orden, siguiendo las flechas]*
 
@@ -119,7 +119,7 @@ Hemos centrado este diagrama en este flujo concreto porque es donde confluyen m�
 
 ---
 
-## 9. BASE DE DATOS (1 minuto) — Slide 21
+## 9. BASE DE DATOS (1 minuto) — Slide 21 -> IVAN
 
 *[Zoom a cada entidad con su relación]*
 
@@ -133,7 +133,7 @@ Lo que no veis aquí pero sí está implementado es la lógica de lista de esper
 
 ---
 
-## 10. CIERRE Y TRANSICIÓN A DEMO (30 segundos) — Slide 22
+## 10. CIERRE Y TRANSICIÓN A DEMO (30 segundos) — Slide 22 -> IVAN
 
 En resumen, lo que os hemos presentado hoy es una plataforma diseñada para ser robusta, segura y preparada para crecer con vuestras necesidades. Una arquitectura que garantiza que el inicio de temporada no sea un caos, que ningún ciudadano se quede sin su plaza por un error del sistema, y que el equipo del centro pueda gestionar todo desde un único punto.
 
