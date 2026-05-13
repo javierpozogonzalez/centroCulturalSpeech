@@ -5,7 +5,7 @@
 
 ## 1. INTRODUCCIÓN (30 segundos) — Slide 1
 
-Buenos días / Buenas tardes. Antes de nada, queremos agradeceros que nos hayáis dado la oportunidad de trabajar en este proyecto. Habéis llegado a nosotros con una necesidad muy clara: el centro cultural está creciendo, las actividades aumentan cada temporada, y gestionar inscripciones, salas y monitores con hojas de cálculo o sistemas dispersos ya no es viable.
+Buenos días / Buenas tardes. Antes de nada, queremos agradeceros que nos hayáis dado la oportunidad de trabajar en este proyecto. Habéis llegado a nosotros con una necesidad muy clara: el centro cultural está creciendo, las actividades aumentan cada temporada, y gestionar inscripciones, salas, monitores y notificaciones con hojas de cálculo o sistemas dispersos ya no es viable.
 
 Hoy os venimos a presentar la arquitectura completa de la plataforma que vamos a construir para vosotros — una solución diseñada no solo para resolver vuestros problemas de hoy, sino para crecer con vosotros durante los próximos años.
 
