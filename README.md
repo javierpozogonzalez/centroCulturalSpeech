@@ -31,7 +31,7 @@ Cuando analizamos estos requisitos, la primera opción obvia sería una aplicaci
 
 Imaginad el inicio de temporada en septiembre. En cuestión de horas, cientos de ciudadanos intentan inscribirse simultáneamente en los talleres más populares. Un sistema monolítico colapsaría bajo esa carga. Y si el módulo de notificaciones falla, arrastra consigo a toda la plataforma.
 
-Por eso hemos optado por una **arquitectura orientada a microservicios**. Cada funcionalidad crítica es un servicio independiente: actividades, usuarios, inscripciones, salas y monitores. Si hay un pico de demanda en inscripciones, solo escalamos ese servicio. Y si el servicio de notificaciones tiene un problema puntual, las inscripciones siguen funcionando con total normalidad.
+Por eso hemos optado por una **arquitectura orientada a microservicios**. Cada funcionalidad crítica es un servicio independiente: actividades, usuarios, inscripciones, salas, monitores y notificaciones. Si hay un pico de demanda en inscripciones, solo escalamos ese servicio. Y si el servicio de notificaciones tiene un problema puntual, las inscripciones siguen funcionando con total normalidad.
 
 ### Slide 5 — Requisitos no funcionales
 
